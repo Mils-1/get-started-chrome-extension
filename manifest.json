@@ -1,0 +1,17 @@
+{
+  "name": "Get Started With Chrome Extensions",
+  "author": "Nick Milazzo",
+  "version": "0.1",
+  "description": "This chrome extension will replace all instances of `Kevin Durant` and `KD` with the 🐍 emoji.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "manifest_version": 2
+}
